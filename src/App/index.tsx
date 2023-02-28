@@ -4,9 +4,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import { AppRouter } from "../router/AppRouter";
 
 const App = () => {
-  const handleSubmit = () => {
-    console.log('clicou')
-  }
 
   return (
     <ThemeProvider theme={theme}>
