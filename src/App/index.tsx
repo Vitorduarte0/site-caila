@@ -15,9 +15,6 @@ const App = () => {
 
       <Header />
 
-      <main>
-        
-      </main>
     </ThemeProvider>
   )
 }

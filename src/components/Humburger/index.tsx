@@ -5,6 +5,7 @@ import * as S from "./styled";
 import { Button } from "@mui/material";
 import FormatListBulletedSharpIcon from "@mui/icons-material/FormatListBulletedSharp";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
+import { CustomButton } from "../Button";
 
 interface Props {
   mobile: boolean;
@@ -17,13 +18,13 @@ export const Humburger: React.FC<Props> = ({open, mobile, handleToggleMenu }) =>
     <>
       <S.HamburgerButton visible={mobile} onClick={handleToggleMenu}>
         {!open ? (
-          <Button color="secondary" onClick={handleToggleMenu}>
-            <FormatListBulletedSharpIcon color="secondary" fontSize="large" />
-          </Button>
+          <CustomButton width="4em" border={'12em'} onClick={handleToggleMenu}>
+            <FormatListBulletedSharpIcon color="primary" fontSize="large" />
+          </CustomButton>
         ) : (
-          <Button color="secondary" onClick={handleToggleMenu}>
-            <CloseSharpIcon color="secondary" fontSize="large" />
-          </Button>
+          <CustomButton width="4em" border={'12em'} onClick={handleToggleMenu}>
+          <CloseSharpIcon color="primary" fontSize="large" />
+        </CustomButton>
         )}
       </S.HamburgerButton>
     </>

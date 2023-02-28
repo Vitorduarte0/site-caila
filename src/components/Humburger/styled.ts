@@ -5,7 +5,7 @@ import styled from "styled-components";
 type MenuProps = {
     open?: boolean;
     visible?: boolean;
-  };
+};
 
 export const HamburgerButton = styled.div<MenuProps>`
 

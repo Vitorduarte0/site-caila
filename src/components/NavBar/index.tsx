@@ -1,6 +1,5 @@
 import * as S from "./styled";
 
-
 import { useState, useEffect } from "react";
 import { CustomButton } from "../Button";
 import { Humburger } from "../Humburger";
@@ -59,6 +58,9 @@ export const NavBar = () => {
 
       {
         <S.DivButton open={!openChange}>
+
+          <CustomButton text='Home' onClick={handleSubmit} />
+
           <CustomButton text='Sobre' onClick={handleSubmit} />
 
           <CustomButton text='Serviços' onClick={handleSubmit} />
@@ -72,11 +74,13 @@ export const NavBar = () => {
         <S.ContainerDivActive>
           <S.DivButtonActive>
             
-          <CustomButton text='Sobre' onClick={handleSubmit} />
+          <CustomButton width={'13em'} border={'8px'} text='Home' onClick={handleSubmit} />
 
-          <CustomButton text='Serviços' onClick={handleSubmit} />
+          <CustomButton width={'13em'} border={'8px'} text='Sobre' onClick={handleSubmit} />
 
-          <CustomButton text='Contato' onClick={handleSubmit} />
+          <CustomButton width={'13em'} border={'8px'} text='Serviços' onClick={handleSubmit} />
+
+          <CustomButton width={'13em'} border={'8px'} text='Contato' onClick={handleSubmit} />
            
           </S.DivButtonActive>
         </S.ContainerDivActive>

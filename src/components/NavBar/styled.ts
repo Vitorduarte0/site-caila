@@ -50,8 +50,8 @@ export const DivButtonActive = styled.div`
     width: 80% ;
     height: 90%;
     margin-left: 15%;
-    margin-top: 2%;
-
+    margin-top: 4rem;
+  
     span {
     color: ${primary};
   }
