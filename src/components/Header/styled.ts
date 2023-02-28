@@ -1,10 +1,4 @@
 import styled from "styled-components";
-import { primary } from "../../constants/color";
-
-type MenuProps = {
-  open?: boolean;
-  visible?: boolean;
-};
 
 export const ContainerHeader = styled.header`
   display: flex;
@@ -27,7 +21,6 @@ export const Img = styled.img`
   border: 2px solid #fff;
 
  
-
   @media screen and (max-width: 375px) {
     width: 90px;
   }

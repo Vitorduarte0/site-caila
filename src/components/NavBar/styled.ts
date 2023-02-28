@@ -33,7 +33,7 @@ export const ContainerDivActive = styled.div`
    margin-top: 38vh;
    margin-right: 2%;
    border-radius: 10%;
-
+   z-index: 300;
 
   background: linear-gradient(to bottom,  #f2b6c3, #ffff);
 

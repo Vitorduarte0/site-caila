@@ -11,6 +11,10 @@ export const NavBar = () => {
 
   const handleToggleMenu = () => {
     setOpen(!open);
+
+    // setTimeout(() => {
+    //   setOpen(!open);
+    // }, 100);
   };
 
   const handleSubmit = () => {
