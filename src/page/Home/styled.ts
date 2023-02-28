@@ -6,12 +6,12 @@ import Img3 from "../../assets/foto3.jpg";
 export const ContainerMain = styled.main`
 
     width: 100%;
-    height: 66vh;
+    height: calc(60vh );
     background-image: url(${Img3});
     
     @media screen and (max-width: 769px) {
         width: 100%;
-        height: 66vh;
+        height: calc(60vh - 50px );
         background-image: url(${Img1});
   }
 
