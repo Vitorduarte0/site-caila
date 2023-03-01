@@ -7,6 +7,8 @@ type MenuProps = {
   width?: string | any;
   height?: string | any;
   border?: string;
+  background?: string;
+  customColor?: string
 };
 
 export const ButtonModified = styled(Button)<MenuProps>`
@@ -19,8 +21,8 @@ export const ButtonModified = styled(Button)<MenuProps>`
     height: ${({ height }) => height ? height : ''};
     
     &:hover, &:focus {
-      background-color: #000;
-      color: ${primary};
+      background-color: ${( {background}) => background ? background : '#000'};
+      color: ${( {customColor}) => customColor? customColor : `${primary}`};
     }
 
     span {

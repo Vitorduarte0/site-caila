@@ -9,6 +9,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Global />
       <AppRouter />
+    
     </ThemeProvider>
   )
 }

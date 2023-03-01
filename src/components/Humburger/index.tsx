@@ -2,7 +2,6 @@ import React from "react";
 
 import * as S from "./styled";
 
-import { Button } from "@mui/material";
 import FormatListBulletedSharpIcon from "@mui/icons-material/FormatListBulletedSharp";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
 import { CustomButton } from "../Button";

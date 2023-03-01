@@ -2,6 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 import Img1 from "../../assets/foto1.jpg";
 import Img3 from "../../assets/foto3.jpg";
+import { primary } from "../../constants/color";
 
 
 const slideSection = keyframes`
@@ -21,7 +22,7 @@ const slideSection = keyframes`
 
 export const Container = styled.main`
     transition: all 0.3s ease;
-    animation: ${slideSection} 2s ease;
+    animation: ${slideSection} 1.80s ease;
 
 `
 
@@ -91,4 +92,13 @@ export const SectionDescripition = styled.section`
     text-align: justify;
     margin: 4%;
   }
+`
+// footer 
+
+
+export const Footer = styled.footer`
+  width: 100%;
+  height: 22em;
+  background-color: #000;
+  color: ${primary}
 `
