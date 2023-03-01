@@ -18,7 +18,7 @@ export const ButtonModified = styled(Button)<MenuProps>`
     width: ${({ width }) => width ? width : '18vw'};
     height: ${({ height }) => height ? height : ''};
     
-    &:hover {
+    &:hover, &:focus {
       background-color: #000;
       color: ${primary};
     }

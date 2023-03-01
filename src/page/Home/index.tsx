@@ -2,8 +2,9 @@ import { CustomButton } from "../../components/Button";
 import * as S from "./styled";
 
 export const Home = () => {
+  
   return (
-    <main>
+    <S.Container>
       <S.ContainerMain>
         <S.ContentSection>
           <h1>
@@ -40,6 +41,6 @@ export const Home = () => {
           sobrancelhas.
         </p>
       </S.SectionDescripition>
-    </main>
+    </S.Container>
   );
 };

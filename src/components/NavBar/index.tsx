@@ -3,11 +3,17 @@ import * as S from "./styled";
 import { useState, useEffect } from "react";
 import { CustomButton } from "../Button";
 import { Humburger } from "../Humburger";
+import { useNavigate } from "react-router-dom";
+import { goToAbout, goToHome } from "../../router/coordinator";
 
 export const NavBar = () => {
+
+  const navigate = useNavigate()
+
   const [open, setOpen] = useState(false);
   const [openChange, setOpenChange] = useState(false);
   const [mobile, setMobile] = useState(false);
+
 
   const handleToggleMenu = () => {
     setOpen(!open);
@@ -59,9 +65,9 @@ export const NavBar = () => {
       {
         <S.DivButton open={!openChange}>
 
-          <CustomButton text='Home' onClick={handleSubmit} />
+          <CustomButton text='Home' onClick={() => goToHome(navigate)} />
 
-          <CustomButton text='Sobre' onClick={handleSubmit} />
+          <CustomButton text='Sobre' onClick={() => goToAbout(navigate)} />
 
           <CustomButton text='Serviços' onClick={handleSubmit} />
 
@@ -74,9 +80,9 @@ export const NavBar = () => {
         <S.ContainerDivActive>
           <S.DivButtonActive>
             
-          <CustomButton width={'13em'} border={'8px'} text='Home' onClick={handleSubmit} />
+          <CustomButton width={'13em'} border={'8px'} text='Home' onClick={() => goToHome(navigate)} />
 
-          <CustomButton width={'13em'} border={'8px'} text='Sobre' onClick={handleSubmit} />
+          <CustomButton width={'13em'} border={'8px'} text='Sobre' onClick={() => goToAbout(navigate)} />
 
           <CustomButton width={'13em'} border={'8px'} text='Serviços' onClick={handleSubmit} />
 
