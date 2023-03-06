@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material/styles";
-import { primary, secondary, tertiary } from "./color";
+import { primary, secondary, quaternary } from "./color";
 
 let theme = createTheme({
   palette: {
@@ -14,8 +14,8 @@ let theme = createTheme({
 
 theme = createTheme(theme, {
   palette: {
-    info: {
-      main: tertiary
+    inherit: {
+      main: quaternary
     }
   }
 });
