@@ -3,6 +3,7 @@ import theme from "../constants/theme";
 import { ThemeProvider } from '@mui/material/styles';
 import { AppRouter } from "../router/AppRouter";
 
+
 const App = () => {
 
   return (

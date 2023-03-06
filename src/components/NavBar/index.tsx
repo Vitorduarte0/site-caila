@@ -65,13 +65,13 @@ export const NavBar = () => {
       {
         <S.DivButton open={!openChange}>
 
-          <CustomButton text='Home' onClick={() => goToHome(navigate)} />
+          <CustomButton backgroundColor={'#fff'} text='Home' onClick={() => goToHome(navigate)} />
 
-          <CustomButton text='Sobre' onClick={() => goToAbout(navigate)} />
+          <CustomButton backgroundColor={'#fff'} text='Sobre' onClick={() => goToAbout(navigate)} />
 
-          <CustomButton text='Serviços' onClick={handleSubmit} />
+          <CustomButton backgroundColor={'#fff'} text='Serviços' onClick={handleSubmit} />
 
-          <CustomButton text='Contato' onClick={handleSubmit} />
+          <CustomButton backgroundColor={'#fff'} text='Contato' onClick={handleSubmit} />
 
         </S.DivButton>
       }
@@ -80,13 +80,13 @@ export const NavBar = () => {
         <S.ContainerDivActive>
           <S.DivButtonActive>
             
-          <CustomButton width={'13em'} border={'8px'} text='Home' onClick={() => goToHome(navigate)} />
+          <CustomButton backgroundColor={'#fff'} width={'13em'} border={'8px'} text='Home' onClick={() => goToHome(navigate)} />
 
-          <CustomButton width={'13em'} border={'8px'} text='Sobre' onClick={() => goToAbout(navigate)} />
+          <CustomButton backgroundColor={'#fff'} width={'13em'} border={'8px'} text='Sobre' onClick={() => goToAbout(navigate)} />
 
-          <CustomButton width={'13em'} border={'8px'} text='Serviços' onClick={handleSubmit} />
+          <CustomButton backgroundColor={'#fff'} width={'13em'} border={'8px'} text='Serviços' onClick={handleSubmit} />
 
-          <CustomButton width={'13em'} border={'8px'} text='Contato' onClick={handleSubmit} />
+          <CustomButton backgroundColor={'#fff'} width={'13em'} border={'8px'} text='Contato' onClick={handleSubmit} />
            
           </S.DivButtonActive>
         </S.ContainerDivActive>

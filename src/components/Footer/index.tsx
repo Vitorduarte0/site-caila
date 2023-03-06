@@ -1,0 +1,105 @@
+import { CustomButton } from "../../components/Button";
+import * as S from "./styled";
+
+import { BsInstagram, FaFacebookF, ImWhatsapp } from 'react-icons/all'
+
+import Logo from "../../assets/title.png";
+
+export const Footer = () => {
+    return (
+        <S.Footer>
+
+            <S.Figure>
+                <S.Img src={Logo} alt="Logo" />
+            </S.Figure>
+
+            <S.ContainerSection>
+                <S.DivMenu>
+                    <section>
+                        <h3>Menu</h3>
+
+                        <S.Ul>
+                            <li>
+                                <S.Ancora href="">Serviços</S.Ancora>
+                            </li>
+                            <li>
+                                <S.Ancora href="/about">
+                                    Sobre
+                                </S.Ancora>
+                            </li>
+                            <li>
+                                <S.Ancora href="">
+                                    Contate-me
+                                </S.Ancora>
+                            </li>
+                        </S.Ul>
+                    </section>
+
+                    <section>
+
+                        <h3>O que eu faço</h3>
+
+                        <S.Ul>
+                            <li>
+                                <p>Designer sobrancelhas</p>
+                            </li>
+                            <li>
+                                <p>Aplicação com henna</p>
+                            </li>
+                            <li>
+                                <p>depilação de buço na cera.</p>
+                            </li>
+                        </S.Ul>
+
+                    </section>
+
+                    <S.SectionSocial>
+                        <h3>Social</h3>
+
+                        <S.UlRow>
+
+                            <li>
+                                <S.Ancora href=""> <FaFacebookF /> </S.Ancora>
+
+                            </li>
+                            <li>
+                                <S.Ancora href=""> < BsInstagram /> </S.Ancora>
+                            </li>
+                            <li>
+                                <S.Ancora href=""> < ImWhatsapp /> </S.Ancora>
+                            </li>
+
+                        </S.UlRow>
+
+                    </S.SectionSocial>
+                </S.DivMenu>
+
+                <section>
+                    <S.UlColumns>
+                        <S.Li>
+
+                            © 2023, caila-designer, pj. Todos direitos reservados.
+
+                            R. Das palmeiras - Campo Alegre de Lourdes - BA, Brasil
+                            
+                        </S.Li>
+
+                        <li>
+                            <CustomButton backgroundColor={"#fff"} width="14em" height={"4em"}>
+                                <a
+                                    style={{ textDecoration: "none", color: "#4fc700" }}
+                                    href="https://contate.me/caila_design"
+                                    target="_blank"
+                                >
+                                    Agendar Horário
+                                </a>
+                            </CustomButton>
+                        </li>
+
+                    </S.UlColumns>
+                </section>
+
+            </S.ContainerSection>
+        </S.Footer>
+    );
+};

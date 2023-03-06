@@ -8,12 +8,13 @@ type MenuProps = {
   height?: string | any;
   border?: string;
   background?: string;
-  customColor?: string
+  customColor?: string;
+  backgroundColor?: string
 };
 
 export const ButtonModified = styled(Button)<MenuProps>`
      && {
-    background-color: #fff;
+    background-color: ${( { backgroundColor }) => backgroundColor ? backgroundColor : ''};
     color: #000;
     border-radius: ${( { border }) => border ? border : '8px'} ;
     margin-right: 8px;

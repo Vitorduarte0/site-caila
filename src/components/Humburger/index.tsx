@@ -17,11 +17,11 @@ export const Humburger: React.FC<Props> = ({open, mobile, handleToggleMenu }) =>
     <>
       <S.HamburgerButton visible={mobile} onClick={handleToggleMenu}>
         {!open ? (
-          <CustomButton width="4em" border={'12em'} onClick={handleToggleMenu}>
+          <CustomButton backgroundColor="#fff" width="4em" border={'12em'} onClick={handleToggleMenu}>
             <FormatListBulletedSharpIcon color="primary" fontSize="large" />
           </CustomButton>
         ) : (
-          <CustomButton width="4em" border={'12em'} onClick={handleToggleMenu}>
+          <CustomButton backgroundColor="#fff" width="4em" border={'12em'} onClick={handleToggleMenu}>
           <CloseSharpIcon color="primary" fontSize="large" />
         </CustomButton>
         )}

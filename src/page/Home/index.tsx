@@ -1,4 +1,5 @@
-import { CustomButton, MuiVariant } from "../../components/Button";
+import { CustomButton } from "../../components/Button";
+import { Footer } from "../../components/Footer";
 import * as S from "./styled";
 
 export const Home = () => {
@@ -14,7 +15,7 @@ export const Home = () => {
               Transforme o visual do seu rosto com sobrancelhas perfeitas
             </strong>
           </p>
-          <CustomButton width="14em" height={"4em"}>
+          <CustomButton backgroundColor={"#fff"} width="14em" height={"4em"}>
             <a
               style={{ textDecoration: "none", color: "#4fc700" }}
               href="https://contate.me/caila_design"
@@ -46,36 +47,7 @@ export const Home = () => {
         </p>
       </S.SectionDescripition>
 
-      <S.Footer>
-        <section>
-          <h1>Contato-me:</h1>
-          <ul>
-            <li>
-              <CustomButton background="#25d366" width="10em" height={"3em"}>
-                <a
-                  style={{ textDecoration: "none", color: "#000" }}
-                  href="https://contate.me/caila_design"
-                  target="_blank"
-                >
-                  whatsapp
-                </a>
-              </CustomButton>
-            </li>
-
-            <li>
-              <CustomButton variant={MuiVariant.outlined} background="#25d366" width="10em" height={"3em"} >
-                <a
-                  style={{ textDecoration: "none", color: "#000" }}
-                  href="https://contate.me/caila_design"
-                  target="_blank"
-                >
-                  instagran
-                </a>
-              </CustomButton>
-            </li>
-          </ul>
-        </section>
-      </S.Footer>
+      <Footer />
     </S.Container>
   );
 };

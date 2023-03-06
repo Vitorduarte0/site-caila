@@ -10,7 +10,8 @@ interface Props {
   onClick?: () => void;
   customColor?: string;
   background?: string;
-  variant?: MuiVariant
+  variant?: MuiVariant;
+  backgroundColor?: string
 }
 
 export enum MuiVariant {
@@ -28,7 +29,8 @@ export const CustomButton: React.FC<Props> = ({
   height,
   customColor,
   background,
-  variant
+  variant,
+  backgroundColor
 }) => {
   return (
     <S.ButtonModified
@@ -39,6 +41,7 @@ export const CustomButton: React.FC<Props> = ({
       customColor={customColor}
       background={background}
       variant={variant}
+      backgroundColor={backgroundColor}
     >
       {text}
       <span>{children}</span>
