@@ -90,6 +90,6 @@ export const SectionDescripition = styled.section`
     line-height: 1.5; 
     color: #333; 
     text-align: justify;
-    margin: 4%;
+    margin: 2%;
   }
 `
