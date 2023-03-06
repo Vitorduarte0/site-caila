@@ -46,6 +46,7 @@ export const Ancora = styled.a`
     text-decoration: none;
     color: #4fc700;
     font-size: medium;
+    
 
     &:hover, &:focus {
         color: #fff
