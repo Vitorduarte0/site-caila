@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 import Img1 from "../../assets/foto1.jpg";
 import Img3 from "../../assets/foto3.jpg";
-import { primary } from "../../constants/color";
+
 
 
 const slideSection = keyframes`

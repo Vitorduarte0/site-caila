@@ -1,7 +1,9 @@
 import * as S from "./styled";
 
-import logo from "../../assets/logo.png";
+
 import { NavBar } from "../NavBar";
+
+import Logo from "../../assets/title.png";
 
 export const Header = () => {
   
@@ -10,7 +12,7 @@ export const Header = () => {
     <S.ContainerHeader>
       <S.NavBar>
         <div>
-          <S.Img src={logo} alt="Logo type to name caila" />
+          <S.Img src={Logo} alt="Logo type to name caila" />
         </div>
 
         <NavBar />

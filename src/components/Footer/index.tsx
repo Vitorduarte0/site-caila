@@ -18,7 +18,7 @@ export const Footer = () => {
     return (
         <S.Footer>
 
-            <S.Figure>
+            <S.Figure >
                 <S.Img src={Logo} alt="Logo" />
             </S.Figure>
 
