@@ -59,14 +59,28 @@ export const Footer = () => {
                         <S.UlRow>
 
                             <li>
-                                <S.Ancora href=""> <FaFacebookF /> </S.Ancora>
+                                <S.Ancora
+                                    href="https://www.facebook.com/caila.silva.108"
+                                    target="_blank"
+                                > <FaFacebookF />
+                                </S.Ancora>
 
                             </li>
                             <li>
-                                <S.Ancora href=""> < BsInstagram /> </S.Ancora>
+                                <S.Ancora
+                                    href="https://www.instagram.com/cailla_design/"
+                                    target="_blank"
+                                >
+                                    < BsInstagram />
+                                </S.Ancora>
                             </li>
                             <li>
-                                <S.Ancora href=""> < ImWhatsapp /> </S.Ancora>
+                                <S.Ancora 
+                                    href="https://contate.me/caila_design"
+                                    target="_blank"
+                                > 
+                                < ImWhatsapp />
+                                 </S.Ancora>
                             </li>
 
                         </S.UlRow>
