@@ -15,7 +15,6 @@ export const Footer = () => {
         goToAbout(navigate)
     }
    
-
     return (
         <S.Footer>
 
