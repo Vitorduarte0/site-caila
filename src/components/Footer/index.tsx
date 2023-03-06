@@ -4,8 +4,18 @@ import * as S from "./styled";
 import { BsInstagram, FaFacebookF, ImWhatsapp } from 'react-icons/all'
 
 import Logo from "../../assets/title.png";
+import { useNavigate } from "react-router-dom";
+import { goToAbout } from "../../router/coordinator";
 
 export const Footer = () => {
+    const navigate = useNavigate()
+
+    const handleAbout = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        e.preventDefault()
+        goToAbout(navigate)
+    }
+   
+
     return (
         <S.Footer>
 
@@ -23,7 +33,7 @@ export const Footer = () => {
                                 <S.Ancora href="">Serviços</S.Ancora>
                             </li>
                             <li>
-                                <S.Ancora href="/about">
+                                <S.Ancora href="#" onClick={ handleAbout}>
                                     Sobre
                                 </S.Ancora>
                             </li>
