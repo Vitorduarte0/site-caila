@@ -11,9 +11,9 @@ export const Header = () => {
   return (
     <S.ContainerHeader>
       <S.NavBar>
-        <div>
+        <S.Figure>
           <S.Img src={Logo} alt="Logo type to name caila" />
-        </div>
+        </S.Figure>
 
         <NavBar />
       </S.NavBar>

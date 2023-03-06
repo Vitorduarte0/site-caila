@@ -33,7 +33,7 @@ export const DivMenu = styled.div`
 
 export const Figure = styled.figure`
     width: 130px;
-    padding: 5%;
+    padding: 5%; 
 `
 
 export const Img = styled.img`
