@@ -41,6 +41,14 @@ export const Footer = () => {
                                     Contate-me
                                 </S.Ancora>
                             </li>
+                            <li>
+                                <S.Ancora 
+                                    href="https://yg53ddlgxmr.typeform.com/to/cmlJCNSw"
+                                    target="_blank"
+                                    >
+                                    Ajude-nos a melhorar
+                                </S.Ancora>
+                            </li>
                         </S.Ul>
                     </section>
 

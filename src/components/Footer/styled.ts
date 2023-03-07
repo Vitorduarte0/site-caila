@@ -4,7 +4,7 @@ import { primary } from "../../constants/color";
 
 export const Footer = styled.footer`
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   background: linear-gradient(to bottom,hsl(350, 100%, 95%),#000,#000, #000, #000, #000 );
   -webkit-font-smoothing: antialiased;
   color: ${primary};

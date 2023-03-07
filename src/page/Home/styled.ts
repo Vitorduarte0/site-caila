@@ -26,7 +26,7 @@ export const Container = styled.main`
 
 `
 
-export const ContainerMain = styled.div`
+export const ContainerMain = styled.main`
 
     width: 100%;
     height: calc(60vh );
